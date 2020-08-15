@@ -1,0 +1,45 @@
+
+body {
+    background-color: #08090A;
+    color:#7EBA26;
+margin: 5% 5%;
+text-align: center;
+}
+
+h1{
+
+font-size: 4rem;
+
+}
+
+
+
+.p1{
+
+padding: 5% 0 0 20%;
+
+}
+
+.p2{
+
+    padding: 5% 20% 0 0;
+    
+    }
+
+    .dice1 {
+
+  height: 210px;
+  width: 200px;
+padding-top: 2%;
+
+    }
+
+
+    .dice2 {
+
+
+        height: 210px;
+        width: 200px;
+        padding-top: 2%;
+
+    }
