@@ -13,8 +13,16 @@ audio.play();
     
     var str1="img/dice"+n+".png";
     
+  document.querySelector(".dice1").classList.add("pressed");
+
+
     document.querySelector(".dice1").setAttribute("src",str1);
+
+    setTimeout(function(){
+
+        document.querySelector(".dice1").classList.remove("pressed");
     
+      },100)    
     var q=Math.random()*6+1;
     q=Math.floor(q);
     if(q>6)
@@ -24,23 +32,28 @@ audio.play();
     
     
     var str2="img/dice"+q+".png";
+    document.querySelector(".dice2").classList.add("pressed");
     document.querySelector(".dice2").setAttribute("src",str2);
     
+    setTimeout(function(){
+
+        document.querySelector(".dice2").classList.remove("pressed");
     
+      },100)    
     if(n==q)
     {
-        document.querySelector("h1").innerHTML="Draw!!";
+        document.querySelector("h1").innerHTML="<em>Draw!!</em>";
     }
     
     if(n>q)
     {
     
-        document.querySelector("h1").innerHTML="Player 1 Wins!!";
+        document.querySelector("h1").innerHTML="<em>Player 1 Wins!!</em>";
     }
     
     else if(n<q){
     
-        document.querySelector("h1").innerHTML="Player 2 Wins!!";
+        document.querySelector("h1").innerHTML="<em>Player 2 Wins!!<em>";
     
     }
     
